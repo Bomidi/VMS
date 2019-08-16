@@ -1,0 +1,40 @@
+﻿<%@ Master Language="VB" CodeFile="Main_MasterPage.master.vb" Inherits="Main_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Online Library Management System</title>
+    <link href="css/Style.css" type="text/css" rel="Stylesheet" media="all" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="page">
+            <div id="container">
+                <div id="header">
+                    <a href="#"><img src="Images/header.png" width="1200px" height="150px" alt="" /></a>
+                </div>
+                <div id="main">
+                    <div id="menu">
+                        <ul>
+                            <li><a href="Member_Home.aspx">Home</a></li>
+                            <li><a href="Library_Books.aspx">Library Books</a></li>
+                            <li><a href="Contact.aspx">Contact Us</a></li>
+                            <li><a href="Admin_Login.aspx">Admin Login</a></li>
+                        </ul>  
+                    </div>                
+                <div id="text">
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div id="footer">
+                    <p>Design By:Bhaumik Mevada</p>
+                </div>
+              </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,39 @@
+﻿<%@ Master Language="VB" CodeFile="Admin_MasterPage.master.vb" Inherits="Admin_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Admin Page</title>
+    <link href="css/Style.css" rel="Stylesheet" type="text/css" media="all" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="page">
+        <div id="container">
+            <div id="header">
+                <a href="#"><img src="Images/header.png" alt="" width="1200px" height="150px" /></a>
+            </div>
+            <div id="main">
+                <div id="menu">
+                    <ul>
+                        <li><a href="Admin_Add_Records.aspx">Add Record</a></li>
+                        <li><a href="Admin_Delete_Book.aspx">Delete Record</a></li>
+                        <li><a href="Admin_Record.aspx">View Record</a></li>
+                    </ul>
+                </div>
+                <div id="text" style="width:500px;">
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div id="footer">
+                    <p>Design By :Bhaumik Mevada</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
